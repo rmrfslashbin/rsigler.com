@@ -1,0 +1,15 @@
+{{ if isset $.Site.Params "certificatons"}}
+<section class="education-section py-3">
+    <h3 class="text-uppercase resume-section-heading mb-4">Certificatons</h3>
+    <ul class="list-unstyled resume-education-list">
+        {{ range $.Site.Params.Certificatons }}
+        <li class="mb-3">
+            <div class="resume-degree font-weight-bold">{{- .title -}}</div>
+            <div class="resume-degree-org text-muted">{{- .summary -}}</div>
+            <div class="resume-degree-time text-muted">{{- .issued -}}</div>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+<!--//education-section-->
+{{ end }}

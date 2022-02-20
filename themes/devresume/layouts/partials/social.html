@@ -1,0 +1,35 @@
+{{ if isset $.Site.Params.Profile "social"}}
+<div class="resume-footer text-center">
+    <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+        {{ range $.Site.Params.Profile.Social }}
+        {{ if eq .type "github" }}
+        <li class="list-inline-item mb-lg-0 me-3"><a target="_blank_github" class="resume-link"
+                href="https://github.com/{{- .username -}}"><i class="fab fa-github-square fa-2x me-2"
+                    data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/{{-
+                    .username -}}</span></a></li>
+        {{ else if eq .type "linkedin" }}
+        <li class="list-inline-item mb-lg-0 me-3"><a target="_blank_linkedin" class="resume-link"
+                href="https://linkedin.com/in/{{- .username -}}"><i class="fab fa-linkedin fa-2x me-2"
+                    data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/{{-
+                    .username -}}</span></a></li>
+        {{ else if eq .type "twitter" }}
+        <li class="list-inline-item mb-lg-0 me-lg-3"><a target="_blank_twitter" class="resume-link"
+                href="https://twitter.com/{{- .username -}}"><i class="fab fa-twitter-square fa-2x me-2"
+                    data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@{{- .username
+                    -}}</span></a></li>
+        {{ else if eq .type "dev" }}
+        <li class="list-inline-item mb-lg-0 me-lg-3"><a target="_blank_dev" class="resume-link"
+                href="https://www.dev.to/{{- .username -}}"><i class="fab fa-dev fa-2x me-2"
+                    data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">dev.to/{{-
+                    .username
+                    -}}</span></a></li>
+        {{ else if eq .type "web" }}
+        <li class="list-inline-item mb-lg-0 me-lg-3"><a target="_blank_web" class="resume-link" href="{{- .url -}}"><i
+                    class="fas fa-globe fa-2x me-2" data-fa-transform="down-4"></i><span
+                    class="d-none d-lg-inline-block text-muted">{{-
+                    .url -}}</span></a></li>
+        {{ end }}
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

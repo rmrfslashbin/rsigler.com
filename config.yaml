@@ -1,0 +1,196 @@
+baseURL: http://rsigler.com/
+languageCode: en-us
+title: Robert Sigler
+theme: devresume
+deployment:
+  targets:
+    - name: aws
+      url: s3://is-static-web-hosting?prefix=/rsigler.com/&region=us-east-1
+      cloudFrontDistributionID: E50BK3Q9DLXOQ
+params:
+  profile:
+    name: Robert Sigler
+    title: "Technology & Operations Leader"
+    image:
+    gravatar:
+      email: rsigler@gmail.com
+    summary: "I am a technology leader who empowers a diverse workforce through mentoring, hands-on teaching and building sustainable teams. With a career rooted in systems engineering and programming, I can navigate all aspects of systems, networking, storage, and software/application operations while maintaining tactical and strategic focus."
+    contacts:
+      - type: pronouns
+        value: "He/Him/His"
+      - type: email
+        ref: rsigler@gmail.com
+        text: rsigler@gmail.com
+      - type: website
+        ref: https://www.rsigler.com
+        text: https://www.rsigler.com
+      - type: location
+        text: Atlanta, GA, USA
+    social:
+      - type: github
+        username: rmrfslashbin
+      - type: linkedin
+        username: robertsigler
+      - type: dev
+        username: rmrfslashbin
+      - type: web
+        url: https://rmrfslashbin.io
+  experience:
+    - title: Senior Manager, Operations
+      employer: McKesson/CoverMyMeds
+      start: 2020 Feb
+      end: present
+      summary: Transitioned from Engineering to Operations to build upon career acumen.
+      details:
+        - Managing a 24x7x365 team responsible for mainframe, Windows, Linux, VMware ESX, Veritas Netbackup, Oracle tape library, and other general data center functions.
+        - Modernizing daily operations technologies.
+        - Managed transition of on-site team to 100% remote.
+        - Building Tier-1 support and incident response teams for application and system processes.
+        - Interfacing between engineering support teams, operations teams, and business teams to solve complex product operational challenges.
+        - Participating in SOX, SSAE, government regulator, and internal audits.
+        - Mentoring peers, junior leaders, and individual contributors.
+    - title: Senior Manager, Systems Engineering
+      employer: McKesson/RelayHealth
+      start: 2016 Dec
+      end: 2020 Feb
+      summary: Promoted to Senior Manager of combined engineering team, building upon Supervisor responsibilities.
+      details:
+        - Managed various technology platforms, including Linux, Windows, VMware, and Infoblox. Experience with Dell, HP, and Cisco hardware.
+        - Managed 24x7 systems in on-premises geo-diverse data centers and cloud computing providers.
+        - Platforms included high-performance computing, database, real-time transaction processing, batch processing, web/UI/presentation tiers, general applications, and data center services (DNS, SMTP, NTP, SNMP, and authentication/authorization).
+        - Evaluated and procured data center hardware and software.
+        - Maintained periodic software licensing for Linux, Windows, VMware, and data support systems.
+        - Managed compliance with government regulatory requirements and industry standards.
+        - Engaged in workforce management and coaching direct-reports in areas of individual career development.
+        - Bridged the “understanding gap” between business and technical staff and led cross-team collaborative initiatives.
+    - title: Supervisor, UNIX Systems Engineering
+      employer: McKesson/RelayHealth
+      start: 2015 Apr
+      end: 2016 Dec
+      summary: Promoted to Team Supervisor, building upon Senior/Lead responsibilities.
+      details:
+        - Provided day-to-day engineering support and guidance to a team of UNIX/Linux engineers.
+        - Managed UNIX and Linux infrastructure projects and provided final approval of technical designs.
+        - Managed team vacation time, on-call, and timesheets.
+        - Conducted yearly performance reviews, career coaching, and disciplinary actions.
+    - title: Charter Board Member, McKesson LGBT Employee Resource Group
+      employer: McKesson
+      start: 2010 Spring
+      end: 2014 Spring
+      summary: Joined board as a charter member, working with corporate sponsorship to establish Atlanta-based Employee Resource Group.
+      details:
+        - Worked with senior leadership and corporate Diversity & Inclusion team to craft LGBT-friendly workplace policies.
+        - Organized and hosted employee engagement events.
+        - Continued to advise board after service term.
+    - title: Senior/Lead UNIX Systems Engineer
+      employer: McKesson/RelayHealth
+      start: 2008 Jan
+      end: 2015 Apr
+      summary: Designed, architected, and implemented enterprise Linux systems.
+      details:
+        - Designed, architected, and implemented Linux high performance compute clusters, Oracle databases, system deployment/management services, LDAP authentication/authorization platform, and virtual systems deployment (VMware ESX, Xen, and KVM).
+        - Provided day-to-day direction to junior System Administrators.
+        - Worked with peer teams to deploy and manage service and software implementations.
+    - title: Senior UNIX Systems Engineer
+      employer: Cedar Document Technologies
+      start: 2006 Nov
+      end: 2007 Dec
+      summary: Designed, architected, and implemented enterprise UNIX, Linux, and VMware ESXi systems.
+      details:
+        - Deployed and managed Red Hat Enterprise Linux systems, Solaris systems, 3PAR SANs.
+        - Maintained internal and external DNS infrastructure.
+        - Architected and implemented VMWare ESX systems.
+        - Managed F5 Load balanced pools of Apache HTTPd, Tomcat, and Email services.
+        - Designed, deployed, and maintained NetBackup services.
+        - Managed public internet/customer-facing production environment.
+        - Created a web-based interface for production statistics reporting, service management, and preemptive service outage alerting.
+    - title: Senior Systems Engineer
+      employer: First Data Corporation
+      start: 1998 Nov
+      end: 2006 Dec
+      summary: Served in various roles including Windows desktop support, desktop support supervisor, and senior Windows & Virtualization engineer.
+      details:
+        - Deployed and managed 400 Windows NT 4 desktop systems.
+        - Deployed and managed a multi-tier real-time payment system on Oracle Database and Windows Server platforms.
+        - Managed a multi-site Windows NT domain for data center and corporate desktop use.
+        - Managed and maintained a multi-site Microsoft Exchange platform.
+        - Participated in a significant data center move.
+        - Organized and lead several satellite office consolidations and relocations.
+        - Participated in a steering committee to architect and deploy virtualization infrastructure.
+        - Participated in steering committee transform & modernize data centers.
+        - Maintained UNIX and SAN platforms.
+        - Managed NetBackup platform and StorageTek tape libraries.
+        - Implemented Microsoft Active Directory infrastructure on Windows 2000 servers.
+        - Managed Systems operations at four remote data centers.
+  #projects:
+  #  - title: Project Awesome
+  #    domain: open source
+  #    summary: "A project that does something awesome."
+  skills:
+    technical:
+      - Amazon Web Services
+      - Geo-Diverse Data Center Engineering
+      - Redhat and Debian Linux Distributions
+      - Redhat Enterprise Linux
+      - Oracle Enterprise Linux
+      - VMware ESX
+      - Microsoft Windows Servers
+      - Various UNIX platforms
+    professional:
+      - Budgeting
+      - Direct and Indirect Leadership
+      - Empowerment, Divesity, and Inclusion
+      - Escalations and Consulting
+      - Incident Response and Management
+      - Mentoring and Career Coaching
+      - Pay and Job Equity Planning
+      - Scheduling
+  languages:
+    proficient:
+      - Go
+      - Python
+      - Javascript
+      - Node.js
+      - HTML & CSS
+      - Vue.js
+      - React
+      - Ansible
+      - JSON
+      - YAML
+      - Bash
+    familiar:
+      - C
+      - Java
+      - Assembly
+      - Pascal
+      - BASIC
+      - .NET
+      - Powershell
+      - C#
+  certificatons:
+    - title: Six Sigma Green Belt
+      summary: $500,000+ of realized saving
+      issued: 2018
+    - title: Finance and Accounting for Non-Financial Managers
+      summary: Georgia Tech Scheller College of Business
+      issued: 2017
+    - title: Red hat Systems Monitoring and Performance Tuning Certificate of Expertise
+      summary: RHEL 6 Version
+      issued: 2011
+    - title: Red hat Clustering and Storage Management Certificate of Expertise
+      summary: RHEL 6 Version
+      issued: 2009
+    - title: Red Hat Certified Engineer
+      summary: RHEL 6 Version
+      issued: 2009
+  spoken_langs:
+    - language: English
+      fluency: Native
+    - language: French
+      fluency: Basic/Conversational
+  interests:
+    - Hiking
+    - Travel
+    - Technology
+    - Music
+    - Fitness

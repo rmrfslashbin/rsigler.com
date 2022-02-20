@@ -1,0 +1,23 @@
+<div class="resume-intro py-3">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-3 col-xl-2 text-center">
+            {{ with $.Site.Params.Profile.Gravatar.Email }}
+            {{- $email := . -}}
+            {{- $emailMD5 := $email | lower | md5 -}}
+            {{- $image := printf "https://www.gravatar.com/avatar/%s?s=200&d=404" $emailMD5 -}}
+            <img class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto" src="{{ $image | safeURL }}"
+                alt="profile image" />
+            {{ else }}
+            {{- $image := resources.Get $.Site.Params.Profile.Image | default "images/profile.png" -}}
+            <img class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto" src="{{ $image | safeURL }}"
+                alt="profile image" />
+            {{ end }}
+        </div>
+
+        <div class="col text-start">
+            <p class="mb-0">{{- $.Site.Params.Profile.Summary -}}</p>
+        </div>
+        <!--//col-->
+    </div>
+</div>
+<!--//resume-intro-->

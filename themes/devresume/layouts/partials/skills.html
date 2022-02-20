@@ -1,0 +1,25 @@
+{{ if isset $.Site.Params "skills"}}
+<section class="skills-section py-3">
+    <h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
+    <div class="item">
+        {{ if isset $.Site.Params.Skills "technical"}}
+        <h4 class="item-title">Technical</h4>
+        <ul class="list-unstyled resume-skills-list">
+            {{ range $.Site.Params.Skills.technical }}
+            <li class="mb-2">{{- . -}}</li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+    <div class="item">
+        {{ if isset $.Site.Params.Skills "professional"}}
+        <h4 class="item-title">Professional</h4>
+        <ul class="list-unstyled resume-skills-list">
+            {{ range $.Site.Params.Skills.professional }}
+            <li class="mb-2">{{- . -}}</li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,10 @@
+{{ if isset $.Site.Params "spoken_langs"}}
+<section class="skills-section py-3">
+    <h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
+    <ul class="list-unstyled resume-lang-list">
+        {{ range $.Site.Params.spoken_langs }}
+        <li class="mb-2">{{- .language }} <span class="text-muted">({{- .fluency -}})</span></li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}
